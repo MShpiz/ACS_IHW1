@@ -192,4 +192,3 @@ print_array:				# вывод массива
 	lw	ra (sp)
 	addi	sp sp 4	
 	ret
-
