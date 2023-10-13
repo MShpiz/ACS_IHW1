@@ -42,3 +42,4 @@
 |7|10|1 2 3 4 5 6 7 8 9 10| 1 3 5 7 9 2 4 6 8 10 | ✔ |
 
 
+![image](https://github.com/MShpiz/ACS_IHW1/assets/88736099/c8bbe889-6cc0-4003-a0d5-2265f9eda626)
