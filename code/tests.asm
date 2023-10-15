@@ -31,7 +31,7 @@ loop:				# заполняем тестовый массив числами от 
 	sw	t0, (sp)
 	
 test3:
-	la	t0 arrayB
+	la	t0 arrayA
 	li	t1, 1
 	print_array t1, t0
 	addi	sp sp 4
@@ -46,7 +46,7 @@ test3:
 	print_array t1, t0
 	addi	sp sp 4
 test4:
-	la	t0 arrayB
+	la	t0 arrayA
 	li	t1, 2
 	print_array t1, t0
 	addi	sp sp 4
@@ -61,7 +61,7 @@ test4:
 	print_array t1, t0
 	addi	sp sp 4
 test5:
-	la	t0 arrayB
+	la	t0 arrayA
 	li	t1, 5
 	print_array t1, t0
 	addi	sp sp 4
@@ -76,7 +76,7 @@ test5:
 	print_array t1, t0
 	addi	sp sp 4
 test6:
-        la	t0 arrayB
+        la	t0 arrayA
 	li	t1, 6
 	print_array t1, t0
 	addi	sp sp 4
@@ -91,7 +91,7 @@ test6:
 	print_array t1, t0
 	addi	sp sp 4
 test7:
-	la	t0 arrayB
+	la	t0 arrayA
 	li	t1, 10
 	print_array t1, t0
 	addi	sp sp 4
@@ -116,7 +116,7 @@ loop2:				# заполняем тестовый массив числами от
 	bne	t2 t1 loop2
 
 test8:
-	la	t0 arrayB
+	la	t0 arrayA
 	li	t1, 10
 	print_array t1, t0
 	addi	sp sp 4
