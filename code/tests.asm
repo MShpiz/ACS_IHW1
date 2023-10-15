@@ -34,77 +34,77 @@ test3:
 	la	t0 arrayA
 	li	t1, 1
 	print_array t1, t0
-	addi	sp sp 4
+	
 
 	addi 	sp sp -4
 	li	t1, 1		# количество элементов в массиве А
 	sw	t1, (sp)
 	jal 	fill_array_b		# В качестве аргументов принимает количество элементов в массиве А, адрес массива А,
-					# адрес массива В. Возвращает - ничего.
+	addi	sp sp 4                # адрес массива В. Возвращает - ничего.
 	la	t0 arrayB
 	li	t1, 1
 	print_array t1, t0
-	addi	sp sp 4
+	
 test4:
 	la	t0 arrayA
 	li	t1, 2
 	print_array t1, t0
-	addi	sp sp 4
+	
 
 	addi 	sp sp -4
 	li	t1, 2		# количество элементов в массиве А
 	sw	t1, (sp)
 	jal 	fill_array_b		# В качестве аргументов принимает количество элементов в массиве А, адрес массива А,
-					# адрес массива В. Возвращает - ничего.
+	addi	sp sp 4				# адрес массива В. Возвращает - ничего.
 	la	t0 arrayB
 	li	t1, 2
 	print_array t1, t0
-	addi	sp sp 4
+	
 test5:
 	la	t0 arrayA
 	li	t1, 5
 	print_array t1, t0
-	addi	sp sp 4
+	
 
 	addi 	sp sp -4
 	li	t1, 5		# количество элементов в массиве А
 	sw	t1, (sp)
 	jal 	fill_array_b		# В качестве аргументов принимает количество элементов в массиве А, адрес массива А,
-					# адрес массива В. Возвращает - ничего.
+	addi	sp sp 4				# адрес массива В. Возвращает - ничего.
 	la	t0 arrayB
 	li	t1, 5
 	print_array t1, t0
-	addi	sp sp 4
+	
 test6:
         la	t0 arrayA
 	li	t1, 6
 	print_array t1, t0
-	addi	sp sp 4
+	
 	
 	addi 	sp sp -4
 	li	t1, 6		# количество элементов в массиве А
 	sw	t1, (sp)
 	jal 	fill_array_b		# В качестве аргументов принимает количество элементов в массиве А, адрес массива А,
-					# адрес массива В. Возвращает - ничего.
+	addi	sp sp 4				# адрес массива В. Возвращает - ничего.
 	la	t0 arrayB
 	li	t1, 6
 	print_array t1, t0
-	addi	sp sp 4
+	
 test7:
 	la	t0 arrayA
 	li	t1, 10
 	print_array t1, t0
-	addi	sp sp 4
+	
 
 	addi 	sp sp -4
 	li	t1, 10		# количество элементов в массиве А
 	sw	t1, (sp)
 	jal 	fill_array_b		# В качестве аргументов принимает количество элементов в массиве А, адрес массива А,
-					# адрес массива В. Возвращает - ничего.
+	addi	sp sp 4				# адрес массива В. Возвращает - ничего.
 	la	t0 arrayB
 	li	t1, 10
 	print_array t1, t0
-	addi	sp sp 4
+	
 
 la	t0 arrayA	# увеличиваем значение каждого элемента А на 1
 li	t1 11
@@ -119,17 +119,16 @@ test8:
 	la	t0 arrayA
 	li	t1, 10
 	print_array t1, t0
-	addi	sp sp 4
 
 	addi 	sp sp -4
 	li	t1, 10		# количество элементов в массиве А
 	sw	t1, (sp)
 	jal 	fill_array_b		# В качестве аргументов принимает количество элементов в массиве А, адрес массива А,
-					# адрес массива В. Возвращает - ничего.
+	addi	sp sp 4				# адрес массива В. Возвращает - ничего.
 	la	t0 arrayB
 	li	t1, 10
 	print_array t1, t0
-	addi	sp sp 4
+	
 
 li	a7 10
 ecall
