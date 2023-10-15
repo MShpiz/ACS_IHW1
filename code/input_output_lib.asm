@@ -104,3 +104,18 @@ fill:
 	li	a7, 4
 	ecall
 .end_macro
+
+.macro print_str (%x)
+   .data
+str:
+   .asciz %x
+   .text
+   addi	sp, sp, -4
+   sw	a0, (sp)
+   li a7, 4
+   la a0, str
+   ecall
+   lw	a0, (sp)
+   addi	sp, sp, 4
+.end_macro
+

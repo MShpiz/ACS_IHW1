@@ -2,6 +2,8 @@
 
 main:
 .data
+endl:	.asciz "\n"
+test_txt: .asciz "Test "
 arrayA: .space  40 	
 endArrayA:
 .align  2 
@@ -31,6 +33,7 @@ loop:				# заполняем тестовый массив числами от 
 	sw	t0, (sp)
 	
 test3:
+	print_str ("Test 3\n")
 	la	t0 arrayA
 	li	t1, 1
 	print_array t1, t0
@@ -44,8 +47,10 @@ test3:
 	la	t0 arrayB
 	li	t1, 1
 	print_array t1, t0
+	print_str ("\n")
 	
 test4:
+	print_str ("Test 4\n")
 	la	t0 arrayA
 	li	t1, 2
 	print_array t1, t0
@@ -59,8 +64,10 @@ test4:
 	la	t0 arrayB
 	li	t1, 2
 	print_array t1, t0
+	print_str ("\n")
 	
 test5:
+	print_str ("Test 5\n")
 	la	t0 arrayA
 	li	t1, 5
 	print_array t1, t0
@@ -74,8 +81,10 @@ test5:
 	la	t0 arrayB
 	li	t1, 5
 	print_array t1, t0
+	print_str ("\n")
 	
 test6:
+	print_str ("Test 6\n")
         la	t0 arrayA
 	li	t1, 6
 	print_array t1, t0
@@ -89,8 +98,10 @@ test6:
 	la	t0 arrayB
 	li	t1, 6
 	print_array t1, t0
+	print_str ("\n")
 	
 test7:
+	print_str ("Test 7\n")
 	la	t0 arrayA
 	li	t1, 10
 	print_array t1, t0
@@ -104,6 +115,7 @@ test7:
 	la	t0 arrayB
 	li	t1, 10
 	print_array t1, t0
+	print_str ("\n")
 	
 
 la	t0 arrayA	# увеличиваем значение каждого элемента А на 1
@@ -116,6 +128,7 @@ loop2:				# заполняем тестовый массив числами от
 	bne	t2 t1 loop2
 
 test8:
+	print_str ("Test 8\n")
 	la	t0 arrayA
 	li	t1, 10
 	print_array t1, t0
@@ -128,6 +141,9 @@ test8:
 	la	t0 arrayB
 	li	t1, 10
 	print_array t1, t0
+	print_str ("\n")
+	
+	
 	
 
 li	a7 10
